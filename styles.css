@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+section {
+    width: 100%;
+    background-color: #e9e0f3;
+}
+
+/* styling navigation bar */
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #c4a1e5;
+    font-weight: 500;
+    width: 100%;
+}
+
+header li{
+    float: right;
+    color: blueviolet;
+    text-align: center;
+    font-weight: 800;
+    margin: 0;
+}
+
+.webname{
+    padding: 20px 12px;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 20px 12px;
+    margin: 0;
+
+}
+
+li a:hover{
+    background-color: #ffffbc;
+    color: blueviolet;
+}
+
+
+/* footer */
+footer {
+    background-color: #c4a1e5;
+    padding: 20px 10px;
+}
+
+footer a{
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+}
+
+footer a:hover{
+    color: #5f1e9d;
+    cursor: pointer;
+}
+
+/* styling home page */
+/* .home-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.home-container .card{
+    position: relative;
+    height: max-content;
+    margin: 20px;
+    padding: 100px;
+    display: flex;
+}
+
+.home-container .card .img-box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-container .card .content{
+    margin-left:  30px;
+} */
+
+/* styling index (or home page) */
+.hp-content{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.hp-content h1{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: #5d14a1;
+    
+}
+
+.hp-content p{
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+
+
+.discover-btn a{
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.discover-btn a:hover{
+    color: blue;
+}
+    
+
+
+.polaroid{
+    width: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/* styling class page */
+
+.schedules h2, .gallery h2, .content-signup h2{
+    display: block;
+    max-width: max-content;
+    width: 80%;
+    text-align: center;
+    text-decoration: underline;
+    color:#8456b3;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styling table */
+.schedules table{
+    table-layout: auto;
+    width: 60%;
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    margin: 20px auto;
+    position: relative;
+
+}
+.content-signup h2{
+    margin-bottom: 30px;
+}
+
+tr, th, td{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+    color: #52227e;
+}
+
+th{
+    background-color: #ffffbc;
+    font-size: 14px;
+    color: #a17cc4;
+}
+
+tr, td{
+    border: 2px solid #ffff21;
+}
+
+tr:hover, td:hover{
+    text-decoration:underline;
+    background-color: #b467fc62;
+}
+
+
+/* styling image gallery */
+.img-area{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .single-img{
+    padding:0 20px 20px;
+  }
+  
+  .single-img img {
+    width:300px;
+    height: 300px;
+    object-fit:cover;
+  }
+
+
+
+/* prompt user to sign up */
+
+
+.sign-btn img{
+    display: block;
+    max-width: 220px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-btn img:hover{
+    transform: scale(1.05);
+}
+
+.content-signup{
+    margin-bottom: 30px;
+}
+
+
+

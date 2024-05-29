@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunway Dance Academy</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- font link -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navigation bar -->
+    <ul class="navigation">
+        <li class="webname" style="float:left">Sunway Dance Academy</li>
+        <li><a class="contactus" href="/contactus.html">Contact Us</a></li>
+        <li><a class="join" href="/join.html">Sign Up</a></li>
+        <li><a class="class-link" href="/class.html">Class</a></li>
+        <li><a class="home-link" href="/index.html">Home</a></li>
+    </ul>
+</header>
+
+  <div class="container">
+    <form>
+      <!-- icon -->
+      <i class="fas fa-paper-plane"></i>
+
+      <!-- name-->
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" id="su-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <!-- email -->
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" id="su-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+
+      <!-- password -->
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" id="su-password" onkeyup="validatePassword()">
+        <span id="password-error"></span>
+      </div>
+
+    <!-- confirm password /password2 -->
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password again" id="su-password2" onkeyup="validatePassword2()">
+        <span id="password2-error"></span>
+    </div>
+
+    <!-- submit button -->
+    <button onclick="return validateForm()">Sign Up </button>
+    <span id="submit-error"></span>
+   
+    <!-- link to sign in -->
+    <div class="acc">
+      <p>Already have an account? <a href="signin.html">click here to sign in</a></p>
+    </div>
+    
+  </form>
+
+
+  </div>
+
+
+      <!-- footer -->
+      <footer>
+        <p class="emailus"><a href="mailto:sunwaydanceacademy@imail.my">sunwaydanceacademy@imail.my</a></p>
+    </footer>
+    
+  <script src="signup.js"></script>
+   
+</body>
+</html>

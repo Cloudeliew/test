@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunway Dance Academy</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- font link -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <ul class="navigation">
+            <li class="webname" style="float:left">Sunway Dance Academy</li>
+            <li><a class="contactus" href="/contactus.html">Contact Us</a></li>
+            <li><a class="join" href="/join.html">Sign Up</a></li>
+            <li><a class="class-link" href="/class.html">Class</a></li>
+            <li><a class="home-link" href="/index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <!-- form content -->
+  <div class="container">
+    <form>
+      <!-- icon -->
+      <i class="fas fa-paper-plane"></i>
+
+      <!-- name  -  added in span tag for error message-->
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <!-- phone number -->
+      <div class="input-group">
+        <label>Phone number</label>
+        <input type="tel" placeholder="0123456789" id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+
+      <!-- email -->
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+
+      <!-- user input message -->
+      <div class="input-group">
+        <label>Send us a message!</label>
+        <textarea rows="5" placeholder="Enter your message here" id="contact-message" onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+    <button onclick="return validateForm()">Submit your message</button>
+    <span id="submit-error"></span>
+   
+  </form>
+  
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <p class="emailus"><a href="mailto:sunwaydanceacademy@imail.my">sunwaydanceacademy@imail.my</a></p>
+</footer>
+
+  <script src="contactus.js"></script>
+   
+</body>
+</html>

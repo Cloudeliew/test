@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunway Dance Academy</title>
+    <link rel="stylesheet" href="form.css">
+    <!-- font link -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <ul class="navigation">
+            <li class="webname" style="float:left">Sunway Dance Academy</li>
+            <li><a class="contactus" href="/contactus.html">Contact Us</a></li>
+            <li><a class="join" href="/join.html">Sign Up</a></li>
+            <li><a class="class-link" href="/class.html">Class</a></li>
+            <li><a class="home-link" href="/index.html">Home</a></li>
+        </ul>
+    </header>
+
+  <div class="container">
+    <form>
+      <!-- icon -->
+      <i class="fas fa-paper-plane"></i>
+
+      <!-- username-->
+      <div class="input-group">
+        <label>Username</label>
+        <input type="text" placeholder="Enter your username" id="si-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+
+      <!-- password -->
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" id="si-password" onkeyup="validatePassword()">
+        <span id="password-error"></span>
+      </div>
+
+    <!-- submit button -->
+    <button onclick="return validateForm()">Sign in your account</button>
+    <span id="submit-error"></span>
+
+    <!-- link to sign up -->
+    <div class="acc">
+        <p>Don't have an account? <a href="join.html">click here to sign up</a></p>
+      </div>
+   
+  </form>
+  
+  </div>
+  <script src="signin.js"></script>
+
+    <!-- footer -->
+    <footer>
+        <p class="emailus"><a href="mailto:sunwaydanceacademy@imail.my">sunwaydanceacademy@imail.my</a></p>
+    </footer>
+   
+</body>
+</html>
